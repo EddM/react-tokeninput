@@ -1,5 +1,6 @@
 var React = require('react');
 var PropTypes = require('prop-types');
+var createReactClass = require('create-react-class');
 var guid = 0;
 var k = function(){};
 var addClass = require('./add-class');
@@ -9,7 +10,7 @@ var div = React.createFactory('div');
 var span = React.createFactory('span');
 var input = React.createFactory('input');
 
-module.exports = React.createClass({
+module.exports = createReactClass({
 
   propTypes: {
     /**

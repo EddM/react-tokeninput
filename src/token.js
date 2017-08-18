@@ -1,8 +1,9 @@
 var React = require('react');
+var createReactClass = require('create-react-class');
 var span = React.DOM.span;
 var li = React.createFactory('li');
 
-module.exports = React.createClass({
+module.exports = createReactClass({
   handleClick: function() {
     this.props.onRemove(this.props.value)
   },

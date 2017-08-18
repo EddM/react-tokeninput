@@ -1,10 +1,11 @@
 var React = require('react');
 var PropTypes = require('prop-types');
+var createReactClass = require('create-react-class');
 var addClass = require('./add-class');
 var omit = require('object.omit');
 var div = React.createFactory('div');
 
-module.exports = React.createClass({
+module.exports = createReactClass({
 
   propTypes: {
 
