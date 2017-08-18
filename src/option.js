@@ -1,4 +1,5 @@
 var React = require('react');
+var PropTypes = require('prop-types');
 var addClass = require('./add-class');
 var omit = require('object.omit');
 var div = React.createFactory('div');
@@ -11,18 +12,18 @@ module.exports = React.createClass({
      * The value that will be sent to the `onSelect` handler of the
      * parent Combobox.
     */
-    value: React.PropTypes.any.isRequired,
+    value: PropTypes.any.isRequired,
 
     /**
      * What value to put into the input element when this option is
      * selected, defaults to its children coerced to a string.
     */
-    label: React.PropTypes.string,
+    label: PropTypes.string,
 
     /**
      * Whether the element should be selectable
     */
-    isFocusable: React.PropTypes.bool
+    isFocusable: PropTypes.bool
   },
 
   getDefaultProps: function() {

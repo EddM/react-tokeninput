@@ -1,4 +1,5 @@
 var React = require('react');
+var PropTypes = require('prop-types');
 var guid = 0;
 var k = function(){};
 var addClass = require('./add-class');
@@ -20,7 +21,7 @@ module.exports = React.createClass({
      * function(userInput){}
      * ```
     */
-    onFocus: React.PropTypes.func,
+    onFocus: PropTypes.func,
 
     /**
      * Called when the combobox's input loses focus after being activated for user input
@@ -31,7 +32,7 @@ module.exports = React.createClass({
      * function(userInput){}
      * ```
     */
-    onBlur: React.PropTypes.func,
+    onBlur: PropTypes.func,
 
     /**
      * Called when the combobox receives user input, this is your chance to
@@ -43,7 +44,7 @@ module.exports = React.createClass({
      * function(userInput){}
      * ```
     */
-    onInput: React.PropTypes.func,
+    onInput: PropTypes.func,
 
     /**
      * Called when the combobox receives a selection. You probably want to reset
@@ -55,12 +56,12 @@ module.exports = React.createClass({
      * function(selectedValue){}
      * ```
     */
-    onSelect: React.PropTypes.func,
+    onSelect: PropTypes.func,
 
     /**
      * Shown when the combobox is empty.
     */
-    placeholder: React.PropTypes.string
+    placeholder: PropTypes.string
   },
 
   getDefaultProps: function() {
