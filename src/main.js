@@ -1,4 +1,5 @@
 var React = require('react');
+var createReactClass = require('create-react-class');
 var Combobox = React.createFactory(require('./combobox'));
 var Token = React.createFactory(require('./token'));
 var classnames = require('classnames');
@@ -6,7 +7,7 @@ var classnames = require('classnames');
 var ul = React.DOM.ul;
 var li = React.DOM.li;
 
-module.exports = React.createClass({
+module.exports = createReactClass({
   propTypes: {
     isLoading: React.PropTypes.bool,
     loadingComponent: React.PropTypes.any,

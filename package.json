@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.1",
+    "create-react-class": "^15.6.0",
     "object.omit": "^2.0.1"
   }
 }
