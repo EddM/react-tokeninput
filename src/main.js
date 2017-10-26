@@ -5,8 +5,8 @@ var Combobox = React.createFactory(require('./combobox'));
 var Token = React.createFactory(require('./token'));
 var classnames = require('classnames');
 
-var ul = React.DOM.ul;
-var li = React.DOM.li;
+var ul = React.createFactory('ul');
+var li = React.createFactory('li');
 
 module.exports = createReactClass({
   propTypes: {

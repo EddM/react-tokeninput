@@ -1,6 +1,6 @@
 var React = require('react');
 var createReactClass = require('create-react-class');
-var span = React.DOM.span;
+var span = React.createFactory('span');
 var li = React.createFactory('li');
 
 module.exports = createReactClass({
